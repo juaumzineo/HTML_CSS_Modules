@@ -1,0 +1,34 @@
+<div class="txa">
+	<p class="l1 animwriter">your text.</p>
+	</div>
+
+<style type="text/css">
+	.l1{
+	font-family: "ageo_personal_useregular";
+	color: #333;
+    position: relative;
+    top: 50%;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 300%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+/* the animation */
+.animwriter{
+  animation: typewriter 2.4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 13em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: black;}
+}
+</style>
